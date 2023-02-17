@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
+body {
+  background-image: url("/SVG/cool-background (2).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav .right_div h1 {
+  font-family: "Righteous", cursive;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 50px;
+  width: 300px;
+  background: rgb(4, 25, 52);
+  background: linear-gradient(90deg, rgb(4, 25, 52) 0%, rgb(13, 76, 146) 35%, rgb(0, 125, 255) 93%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+nav .sidebar .bi {
+  font-size: 35px;
+  color: white;
+}
+
+section .Tasksection {
+  height: 78vh;
+  display: flex;
+}
+section .Tasksection .right_section {
+  width: 50%;
+  height: 78vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section .Tasksection .right_section .box {
+  width: 100%;
+  border-radius: 90px;
+  background-color: #2B3A55;
+}
+section .Tasksection .right_section .box .header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+section .Tasksection .right_section .box .header .fa-solid {
+  font-size: 25px;
+  margin: 25px;
+  color: white;
+}
+section .Tasksection .right_section .box .header .fa-solid:hover {
+  padding: 3px;
+  margin: 20px;
+  border-radius: 5px;
+  border: 2px solid hsla(180deg, 23%, 95%, 0.3);
+}
+section .Tasksection .right_section .box .header #time {
+  font-size: 28px;
+  color: hsla(180deg, 23%, 95%, 0.3);
+  font-family: "Prosto One", cursive;
+}
+section .Tasksection .right_section .box .inputs {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+section .Tasksection .right_section .box .inputs #TaskText {
+  width: 500px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+section .Tasksection .right_section .box .inputs #TaskText[type=text] {
+  font-size: 20px;
+  font-weight: 700;
+}
+section .Tasksection .right_section .box .inputs #TaskBttn {
+  font-family: "Righteous", cursive;
+  height: 45px;
+  border-right: none;
+  border-radius: 50px;
+  width: 100px;
+  font-size: 15px;
+  transform: translateX(-50%);
+  border: 10px solid #2B3A55;
+}
+section .Tasksection .left_section {
+  width: 50%;
+  height: 78vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+section .Tasksection .left_section #watch {
+  border: 1px solid hsla(0deg, 100%, 50%, 0.2);
+  border-radius: 5px;
+  padding: 3px;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-family: "Prosto One", cursive;
+}
+section .Tasksection .left_section #taskNote {
+  height: 60vh;
+  width: 45vw;
+  background-color: hsla(180deg, 23%, 95%, 0.3);
+  border-radius: 60px;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  overflow-y: scroll;
+  text-align: center;
+}
+section .Tasksection .left_section #taskNote::-webkit-scrollbar {
+  display: none;
+  scroll-behavior: smooth;
+}
+section .Tasksection .left_section #taskNote #TaskBar {
+  margin: 5px;
+  height: 45px;
+  width: 80%;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+section .Tasksection .left_section #taskNote #TaskBar img {
+  height: 35px;
+  margin: 0px 5px 0px 10px;
+}
+section .Tasksection .left_section #taskNote #TaskBar #TaskIn {
+  font-size: 35px;
+  overflow-x: scroll;
+}
+section .Tasksection .left_section #taskNote #TaskBar #TaskIn::-webkit-scrollbar {
+  display: none;
+}
+
+#side_bar {
+  display: none;
+  background-color: #181D31;
+  position: absolute;
+  top: 0.5%;
+  right: 0.2%;
+  height: 99vh;
+  width: 30vw;
+  line-height: 80px;
+  color: white;
+  -webkit-animation-name: ASB;
+          animation-name: ASB;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#side_bar .cross .fa-solid {
+  font-size: 25px;
+  margin: 20px;
+}
+#side_bar .cross .fa-solid:hover {
+  border: 2px solid white;
+  padding: 4px;
+  margin: 13px;
+  border-radius: 5px;
+}
+#side_bar #Elements ul li {
+  list-style: none;
+}
+#side_bar #Elements ul li a {
+  font-family: "Righteous", cursive;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+@-webkit-keyframes ASB {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 30vw;
+  }
+}
+
+@keyframes ASB {
+  0% {
+    width: 0vw;
+  }
+  100% {
+    width: 30vw;
+  }
+}/*# sourceMappingURL=app.css.map */

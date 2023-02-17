@@ -1,0 +1,52 @@
+$color-1:#3A4F7A;
+$color-2:#1C315E;
+$color-3:#181D31;
+$color-4:#263159;
+$color-5:#2B3A55;
+$color-6:hsl(180, 23%, 95%,0.3);
+$color-7:darkred;
+$background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+$background-image2:url('/SVG/cool-background\ \(2\).png');
+$justify-content:space-around;
+$display-flex:flex;
+
+@mixin providerbackground{
+    background: rgb(4,25,52);
+    background: linear-gradient(90deg, rgba(4,25,52,1) 0%, rgba(13,76,146,1) 35%, rgba(0,125,255,1) 93%);
+}
+@mixin providerdisplay1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin providerdisplayancester{
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin providerdisplay2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+@mixin providerdisplay3{
+    display: flex;
+    justify-content: space-around;
+}
+@mixin providerdisplay4{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin providerdisplay5{
+    display: flex;
+    justify-content: space-evenly;
+}
+@mixin borderprovider{
+    // border-top: none;
+    // border-bottom: none;
+    border-right: none;
+}

@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prosto+One&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("../../SVG/cool-background (2).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Righteous", cursive;
+}
+
+.diary header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+.diary header h1 {
+  font-family: "Righteous", cursive;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 50px;
+  width: 300px;
+  background: rgb(4, 25, 52);
+  background: linear-gradient(90deg, rgb(4, 25, 52) 0%, rgb(13, 76, 146) 35%, rgb(0, 125, 255) 93%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.diary header i {
+  color: white;
+  font-size: 40px;
+}/*# sourceMappingURL=app.css.map */

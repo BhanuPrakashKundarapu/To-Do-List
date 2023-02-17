@@ -1,0 +1,213 @@
+@import '_app.scss';
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+body{
+    background-image: $background-image2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    user-select: none;
+    overflow: hidden;
+}
+
+
+// Nav Section css
+nav{
+    @include providerdisplay2;
+    justify-content: $justify-content;
+    .right_div{
+        h1{
+            font-family: 'Righteous', cursive;
+            font-weight: 700;
+            letter-spacing: 2px;
+            font-size: 50px;
+            width: 300px;
+            @include providerbackground();
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .sidebar{
+        .bi{
+            font-size: 35px;
+            color: white;
+        }
+    }
+}
+
+
+
+// Section css
+section{
+    // width: 100%;
+    .Tasksection{
+        height: 78vh;
+        display: $display-flex;
+        .right_section{
+            width: 50%;
+            // background-color: $color-3;  
+            height: 78vh;
+            @include providerdisplay1();
+            // background-color: $color-4;
+            .box{
+                width: 100%;
+                border-radius: 90px;
+                background-color: $color-5;
+                .header{
+                    // height: 40vh;
+                    width: 100%;
+                    @include providerdisplay3();
+                    // background-color: $color-6;
+                    .fa-solid{
+                        font-size: 25px;
+                        // height:30px;
+                        margin: 25px;
+                        color: white;
+                        &:hover{
+                            padding: 3px;
+                            margin: 20px;
+                            border-radius: 5px;
+                            border: 2px solid $color-6;
+                        }
+                    }
+                    #time{
+                        font-size: 28px;
+                        color: $color-6;
+                        font-family: 'Prosto One', cursive;
+                    }
+                }
+                .inputs{
+                    height: 100px;
+                    @include providerdisplay2();
+                    // background-color: $color-7;
+                    #TaskText{
+                        width: 500px;
+                        height: 40px;
+                        border: none;
+                        outline: none;
+                        border-radius: 50px;
+                        &[type='text']{
+                            font-size: 20px;
+                            font-weight: 700;
+                        }
+                    }
+                    #TaskBttn{
+                        font-family: 'Righteous', cursive;
+                        // font-family: 'Times New Roman', Times, serif;
+                        height: 45px;
+                        @include borderprovider();
+                        border-radius: 50px;
+                        width: 100px;
+                        font-size: 15px;
+                        transform: translateX(-50%);
+                        border: 10px solid $color-5;
+                    }
+                }
+            }
+        }
+        .left_section{
+            width: 50%;
+            height: 78vh;
+            // background-color: $color-6;
+            // background-image: url('/SVG/icons8-checkmark-69.png');
+            @include providerdisplayancester();
+            #watch{
+                border: 1px solid hsl(0, 100%, 50%,0.2);
+                border-radius: 5px;
+                padding: 3px;
+                text-align: center;
+                font-size: 30px;
+                color: white;
+                font-family: 'Prosto One', cursive;
+            }
+            #taskNote{
+                height: 60vh;
+                width:45vw;
+                background-color: $color-6;
+                border-radius: 60px;
+                backdrop-filter: blur(8px);
+                overflow-y:scroll;
+                text-align: center;
+                &::-webkit-scrollbar{
+                    display: none;
+                    scroll-behavior: smooth;
+                }
+              #TaskBar{
+                margin: 5px;
+                height: 45px;
+                width: 80%;
+                border-radius: 40px;
+                border: none;
+                outline: none;
+                background-color: white;
+                @include providerdisplay4();
+                // overflow-x: scroll;
+                img{
+                    height: 35px;
+                    margin:0px 5px 0px 10px;
+                }
+                #TaskIn{
+                    font-size: 35px;
+                    overflow-x: scroll;
+                    &::-webkit-scrollbar{
+                        display: none;
+                    }
+                }
+              }
+                
+            }
+        }
+    }
+}
+
+#side_bar{
+    display: none;
+    background-color:$color-3;
+    position:absolute;
+    top:0.5%;
+    right:0.2%;
+    height:99vh;
+    width:30vw;
+    line-height:80px;
+    color:white;
+    animation-name: ASB;
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   
+    .cross{
+        .fa-solid{
+            font-size: 25px;
+            margin: 20px;
+            // padding: 6px;
+            &:hover{
+                border:2px solid white;
+                padding:4px;
+                margin:13px;
+                border-radius: 5px;
+            }
+        }
+    }
+    #Elements{
+        ul{
+            li{
+                list-style:none;
+                a{
+                    font-family: 'Righteous', cursive;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 25px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+}
+
+@keyframes ASB{
+    0%{
+        width: 0vw;
+    }
+   
+    100%{
+        width: 30vw;
+    }
+}

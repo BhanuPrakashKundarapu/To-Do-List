@@ -1,0 +1,9 @@
+@mixin providerbackground{
+    background: rgb(4,25,52);
+    background: linear-gradient(90deg, rgba(4,25,52,1) 0%, rgba(13,76,146,1) 35%, rgba(0,125,255,1) 93%);
+}
+@mixin displayProvider1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
